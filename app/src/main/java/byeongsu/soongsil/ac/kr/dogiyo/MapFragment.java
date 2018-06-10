@@ -92,8 +92,23 @@ public class MapFragment extends Fragment implements OnMapReadyCallback  {
         LatLng tospia = new LatLng(37.239171, 129.045525);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(tospia));
 
-        Marker marker = mMap.addMarker(new MarkerOptions().position(tospia));
-        marker.setTag(new Store("토스피아", "카페", "010"));
-        marker.showInfoWindow();
+        String[] storeName = getResources().getStringArray(R.array.store_name_array);
+        String[] storeLat = getResources().getStringArray(R.array.store_latitude_array);
+        String[] storeLng = getResources().getStringArray(R.array.store_longitude_array);
+        String[] storeCategory = getResources().getStringArray(R.array.store_category);
+        String[] storeTel = getResources().getStringArray(R.array.store_tel);
+
+        for(int i = 0 ; i < storeName.length ; i++){
+
+            float Lat = Float.parseFloat(storeLat[i]);
+            float Lng = Float.parseFloat(storeLng[i]);
+
+            LatLng store = new LatLng(Lat, Lng);
+
+            mMap.addMarker(new MarkerOptions().position(store))
+            .setTag(new Store(storeName[i], storeCategory[i], storeTel[i]));
+        } 
+
+
     }
 }
