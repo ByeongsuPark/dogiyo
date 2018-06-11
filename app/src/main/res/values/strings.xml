@@ -3,5 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="marker_restaurant">식사</string>
+    <string name="marker_cafe">카페</string>
+    <string name="marker_cvs">편의점</string>
 
 </resources>

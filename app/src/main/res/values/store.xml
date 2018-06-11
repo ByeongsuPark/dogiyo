@@ -140,7 +140,7 @@
         <item></item>
         <item></item>
         <item>식사</item>
-        <item>야식</item>
+        <item>식사</item>
         <item>카페</item>
         <item></item>
         <item></item>
@@ -151,13 +151,13 @@
         <item>치킨</item>
         <item>분식집</item>
         <item>편의점</item>
-        <item>한식</item>
-        <item>중식</item>
+        <item>식사</item>
+        <item>식사</item>
         <item>편의점</item>
-        <item>한식</item>
+        <item>식사</item>
         <item>편의점</item>
         <item>카페</item>
-        <item>한식</item>
+        <item>식사</item>
         <item>카페</item>
     </string-array>
     <string-array name="store_tel">

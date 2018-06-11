@@ -9,11 +9,21 @@ public class Store {
     private String storeName;
     private String storeCategory;
     private String storeTel;
+    private int storeImageResId;
 
-    public Store(String storeName, String storeCategory, String storeTel) {
+    public Store(String storeName, String storeCategory, String storeTel, int storeImageResId) {
         this.storeName = storeName;
         this.storeCategory = storeCategory;
         this.storeTel = storeTel;
+        this.storeImageResId = storeImageResId;
+    }
+
+    public int getStoreImageResId() {
+        return storeImageResId;
+    }
+
+    public void setStoreImageResId(int storeImageResId) {
+        this.storeImageResId = storeImageResId;
     }
 
     public String getStoreName() {

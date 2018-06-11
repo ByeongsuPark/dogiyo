@@ -2,6 +2,7 @@ package byeongsu.soongsil.ac.kr.dogiyo;
 
 import android.app.Activity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -12,6 +13,8 @@ import byeongsu.soongsil.ac.kr.dogiyo.model.Store;
 /**
  * Created by bosslab on 18. 6. 10.
  */
+
+
 
 public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
@@ -34,12 +37,15 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         TextView storeName = (TextView)viewParent.findViewById(R.id.store_name);
         TextView storeCategory = (TextView)viewParent.findViewById(R.id.store_category);
         TextView storeTel = (TextView)viewParent.findViewById(R.id.store_tel);
+        ImageView imageView = (ImageView)viewParent.findViewById(R.id.store_image);
 
         Store store = (Store)marker.getTag();
 
         storeName.setText(store.getStoreName());
         storeCategory.setText(store.getStoreCategory());
         storeTel.setText(store.getStoreTel());
+        imageView.setImageResource(store.getStoreImageResId());
+
 
         return viewParent;
     }

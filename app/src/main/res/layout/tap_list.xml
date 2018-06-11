@@ -5,9 +5,9 @@
     tools:context="byeongsu.soongsil.ac.kr.dogiyo.ListFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello list fragment" />
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
