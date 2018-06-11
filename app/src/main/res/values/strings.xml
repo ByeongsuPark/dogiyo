@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">도기요</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="marker_restaurant">식사</string>
     <string name="marker_cafe">카페</string>
     <string name="marker_cvs">편의점</string>
+    <string name="action_title_ask">문의하기</string>
+    <string name="developer_email">byeongsu@soongsil.ac.kr</string>
+    <string name="ask_email_title">[도기요 - 문의]제목</string>
+    <string name="ask_email_text">=====아래에 내용을 작성해주세요=====</string>
 
 </resources>
